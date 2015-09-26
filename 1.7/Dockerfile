@@ -36,8 +36,8 @@ RUN set -ex \
 
 COPY config/logging.yml /usr/share/elasticsearch/config/
 
-VOLUME ["/usr/share/elasticsearch/data",
-	"/usr/share/elasticsearch/logs",
+VOLUME ["/usr/share/elasticsearch/data", \
+	"/usr/share/elasticsearch/logs", \
 	"/usr/share/elasticsearch/work"]
 
 COPY docker-entrypoint.sh /
